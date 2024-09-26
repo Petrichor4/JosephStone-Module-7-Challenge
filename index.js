@@ -49,7 +49,14 @@ function init() {
             type: 'list',
             message: `${questions[4]}`,
             name: 'license',
-            choices: ['MIT License 2.0','None']
+            choices: [
+                'MIT License 2.0',
+                'Apache License 2.0',
+                'GNU General Public License v3.0',
+                'BSD 2-Clause License',
+                'BSD 3-Clause License',
+                'Creative Commons Zero v1.0 Universal',
+                'None']
         },
         {
             type: 'input',
@@ -61,6 +68,17 @@ function init() {
             message: `${questions[6]}`,
             name: 'tests'
         },
+        {
+            type: 'input',
+            message: `${questions[7]}`,
+            name: 'github'
+        },
+        {
+            type: 'input',
+            message: `${questions[8]}`,
+            name: 'email'
+        },
+
     ])
     .then((answers) => {
         writeToFile('README.md', generateMarkdown(answers))

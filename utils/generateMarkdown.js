@@ -38,24 +38,24 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   switch (license) {
     case "MIT License 2.0":
-      data.licenseLink = '';
+      licenseLink = '';
       break;
     case "Apache License 2.0":
-      data.licenseLink = '';
+      licenseLink = '';
       break;
     case "GNU General Public License v3.0":
-      data.licenseLink = '';
+      licenseLink = '';
       break;
     case "BSD 2-Clause License":
-      data.licenseLink = '';
+      licenseLink = '';
       break;
     case "BSD 3-Clause License":
-      data.licenseLink = '';
+      licenseLink = '';
       break;
     case "Creative Commons Zero v1.0 Universal":
-      data.licenseLink = '';
+      licenseLink = '';
       break;
-  }
+  }return licenseLink;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -80,12 +80,12 @@ function generateMarkdown(data) {
   ${data.desc}
   ## Table of contents
 
-  - Installation
-  * Usage
-  * Licsense
-  * Contributing
-  * Tests
-  * Question
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Licsense](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Question](#questions)
   ## Installation
 
   ${data.install}
@@ -102,7 +102,11 @@ function generateMarkdown(data) {
   ${data.tests}
   ## Questions
 
-  ${data.questions}
+  My GitHub:
+  ${data.github}
+
+  If you would like to get in touch with me for questions about the project email me here:
+  ${data.email}
 `;
 }
 

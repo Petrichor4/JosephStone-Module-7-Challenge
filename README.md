@@ -17,7 +17,11 @@
   First download the repository onto your machine then use the command npm i to install any dependancies.
   ## Usage
 
-  In the current directory enter node index.js then fill out all the question, on completion a README.md file will be made that you are free to use as the readme for your project
+  In the current directory enter node index.js then fill out all the questions, on completion a README.md file will be made that you are free to use as the readme for your project
+
+
+  https://github.com/user-attachments/assets/30e2db43-0731-4977-8783-103f64b6b952
+
 
   ## Contributing
 

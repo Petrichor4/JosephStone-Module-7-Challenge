@@ -66,7 +66,6 @@ function renderLicenseSection(license) {
 
   ${license}
 
-  ${renderLicenseLink(license)}
   `
 }
 

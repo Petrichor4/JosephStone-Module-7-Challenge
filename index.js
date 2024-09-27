@@ -12,7 +12,8 @@ const questions = [
     'What license do you want to use?',
     'Who helped contribute to the project?',
     'Add any tests here:',
-    'Enter your GitHub username:'
+    'Enter your GitHub username:',
+    'What is your email address?'
 ];
 
 // TODO: Create a function to write README file
